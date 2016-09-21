@@ -10,16 +10,54 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    // TODO: Create IB outlets
+  
+   
+    
+    @IBOutlet weak var suitLeft: UILabel!
+    
+    @IBOutlet weak var suitRight: UILabel!
+    
+    @IBOutlet weak var cardValue: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     
+    @IBAction func fourClubPressed(_ sender: AnyObject) {
+        
+         suitLeft.text = " ♣️"
+         suitRight.text = " ♣️"
+         cardValue.text = "4"
+            
+        }
+
     
-    // TODO: IB actions and code to update UI
+    @IBAction func threeSpadePressed(_ sender: AnyObject) {
+        suitLeft.text = "♠️"
+        suitRight.text = "♠️"
+        cardValue.text = "3"
+        
+    }
+    
+    
+    @IBAction func eightDiamondPressed(_ sender: AnyObject) {
+        suitLeft.text = "♦️"
+        suitRight.text = "♦️"
+        cardValue.text = "8"
+        
+    }
 
-  
-
+    
+    @IBAction func tenHeartsPressed(_ sender: AnyObject) {
+        suitLeft.text = "♥️"
+        suitRight.text = "♥️"
+        cardValue.text = "10"
+        
+        
+    }
+    
+    
 }
+
